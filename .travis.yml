@@ -1,7 +1,7 @@
 language: ruby
 rvm:
-  - 2.4.1
-install: gem install middleman
+  - 2.2.0
+install: gem install middleman -v 3.4.1
 script: middleman build
 deploy:
   on:
