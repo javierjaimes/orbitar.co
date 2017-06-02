@@ -1,10 +1,35 @@
 ---
-title: Welcome to Middleman
+title: Orbitar.co
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- Header -->
+<header id="header">
+  <h1>Orbitar</h1>
+  <p>Conectando personas, conectando vidas, conectando cosas...</p>
+  <!--<p>A simple template for telling the world when you'll launch<br />
+  your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>-->
+</header>
+
+<!-- Signup Form -->
+<form id="signup-form" method="post" action="#">
+  <input type="email" name="email" id="email" placeholder="Correo electrónico" />
+  <input type="submit" value="Boletín" />
+</form>
+
+<!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>-->
+    <li><a href="mailto:contacto@orbitar.co" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy; Orbitar.co.</li><li>Creditos: <a href="http://html5up.net">HTML5 UP</a></li>
+  </ul>
+</footer>
+
+<!-- Scripts -->
+<!--[if lte IE 8]><%= javascript_include_tag  "respond.min" %><![endif]-->
+<%= javascript_include_tag  "https://www.gstatic.com/firebasejs/4.1.1/firebase.js" %>
+<%= javascript_include_tag  "main" %>
